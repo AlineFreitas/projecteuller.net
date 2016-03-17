@@ -16,4 +16,12 @@ describe 'multiple_of_3?' do
 end
 
 describe 'multiple_of_5?' do
+  context 'Given a non multiple of 5' do
+    it 'should return false' do
+      expect(multiple_of_5? 3).to be false
+    end
+  end
+  context 'Given a multiple of 5' do
+     expect(multiple_of_5? 5).to be true
+  end
 end
