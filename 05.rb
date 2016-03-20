@@ -16,13 +16,16 @@ def numbers_of_multiple (number)
     #    puts divisors.length
     #    return false
     #end
-    return divisors
+    return divisors.length
 end
+
+
+multiples = 2 * 3 * 5 * 7 * 11 * 13 * 17 * 19
 
 number = 1
 loop do
     number+=1
-    break if numbers_of_multiple(number) == 20
+    break if numbers_of_multiple(multiples * number) == 20
 end
 
-puts number
+puts number * multiples
